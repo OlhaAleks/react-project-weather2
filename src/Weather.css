@@ -1,12 +1,23 @@
 .Weather {
-    background-color: #ede7f3;
-    color: #9ca0a5;
+    position: relative;
+    color: #45484c;
     border: 1px solid rgb(169, 188, 194);
     border-radius: 6px;
     padding: 20px;
 }
+.Weather::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: right/200% url(../src/sky-violet.jpg);
+    opacity: 0.4;
+    content: "";
+    z-index: -1;
+}
 .Weather h1 {
-    color: rgb(124, 122, 120);
+    color: rgb(89, 86, 92);
     font-size: 48px;
     line-height: 52px;
     font-weight: 400;
